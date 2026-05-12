@@ -1,0 +1,71 @@
+.about-layout {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1000px) {
+    .about-layout {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+#mr-house, #rebcon {
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 550px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: transform 0.25s ease-out;
+}
+
+#mr-house {
+    background-image: url(../images/mr\ house2.webp);
+}
+
+#rebcon {
+    background-image: url(../images/Robco\ \ hq.webp);
+}
+
+#mr-house:hover, #rebcon:hover {
+    transform: scale(1.05);
+}
+
+#about {
+    background-color: rgba(17, 17, 17, 0.9);
+    width: 550px;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: transform 0.25s ease-out;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+#about h2 {
+    color: #FFCC00;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#about:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1000px) {
+    .about-layout:last-child #rebcon {
+        order: -1;
+    }
+}
+
+footer {
+    margin-top: 20px;
+}
